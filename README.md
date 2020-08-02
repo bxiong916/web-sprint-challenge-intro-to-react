@@ -28,23 +28,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
-
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-  At its core, React is a solution to a problem that developers faced when building user interfaces. It allows developers to build complex user interfaces which have components that will change frequently over time, without having to write a lot of very tricky JavaScript code.
+  React JS is a user interface component library. It solves the propblem of having to build multiple different components. You can build a component and use it over and over agian. It does by a concept called virtual DOM. When a page is rendered using React, the state of the DOM tree structure/hierarchy is stored, and when there any updates to be made to the UI, it does a diff on the previous (old) DOM tree with the new one, and updates only the ones that have changed. In this way, lots of DOM operations/refreshes are reduced, improving performance considerably.
+
 
 1. Describe component state.
 
-  The heart of every React component is its “state”, an object that determines how that component renders & behaves. In other words, “state” is what allows you to create components that are dynamic and interactive.
+  Component State is a function, or a property that has smaller bits to it that chain or link on to itself to create dry reusable code.
+
 
 1. Describe props.
 
-  Props is a special keyword in React, which stands for properties and is being used for passing data from one component to another. Furthermore, props data is read-only, which means that data coming from the parent should not be changed by child components.
+  Props is data that is being passed down through the component.
+
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
    Side effects are basically anything that affects something outside of the scope of the current function that's being executed.
+   Side effect allows us to pull data or change data when the component props get changed or used. Allowing for a interactive web page.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
