@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
     background-color: rgb(0, 0, 0, 0.10);
     border-radius: 10px;
     margin-bottom: 30px;
-    transition: width 0.9s, height 0.5s;
+    transition: width 0.10s, height 0.10s;
     &:hover {
       width: 20vw;
       height: 50vh;
