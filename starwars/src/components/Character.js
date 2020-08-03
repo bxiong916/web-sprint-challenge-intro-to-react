@@ -13,11 +13,11 @@ const StyledDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #f4f6ff;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+    background-color: rgb(0, 0, 0, 0.10);
     border-radius: 10px;
     margin-bottom: 30px;
-    /* transition: width 0.5s, height 0.5s; */
+    transition: width 0.9s, height 0.5s;
     &:hover {
       width: 20vw;
       height: 50vh;
@@ -33,7 +33,7 @@ const CharacterCard = ({name, gender, height, mass, birthYear, eyeColor, hairCol
   return (
     <StyledDiv>
       <div className='character-div'>
-        <p>{name}</p>
+        <p>Name: {name}</p>
         <p>gender: {gender}</p>
         <p>Height: {height}</p>
         <p>Mass: {mass}</p>
@@ -42,8 +42,10 @@ const CharacterCard = ({name, gender, height, mass, birthYear, eyeColor, hairCol
         <p>Hair Color: {hairColor}</p>
         <p>Skin Color: {skinColor}</p>
       </div>
+      
     </StyledDiv>
   );
 };
 
 export default CharacterCard; 
+
