@@ -1,35 +1,51 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios'
-import Character from './components/Character'
-import styled from 'styled-components'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './App.css';
-
-const Header = styled.h1`
-border: 3px solid black;
-padding: 1.5rem;
-`
+import CharacterCard from './components/Character';
 
 const App = () => {
-  const [characters, setCharacters] = useState([])
+
+  const [characters, setCharacters] = useState([]);
 
 
-  const SWapi = "https://swapi.dev/api/people/"
+  // Try to think through what state you'll need for this app before starting. Then build out
+  // the state properties here.
+
+
+  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
+  // side effect in a component, you want to think about which state and/or props it should
+  // sync up with, if any.
 
   useEffect(() => {
-    axios.get(SWapi)
-    .then((r) => {
-      setCharacters(r.data.results)
-      console.log(r.data.results)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
-  }, [])
+    axios
+      .get('https://swapi.dev/api/people')
+      .then((response) => {
+        console.log(response);
+        setCharacters(response.data.results);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div className="App">
-      <Header className="Header">Characters</Header>
-      <Character characters = {characters}/>
+      <h1 className="Header">Characters</h1>
+      {characters.map(character => {
+        return (
+          <CharacterCard
+            key={character.created}
+            name={character.name}
+            gender={character.gender}
+            height={character.height}
+            mass={character.mass}
+            birthYear={character.birth_year}
+            eyeColor={character.eye_color}
+            hairColor={character.hair_color}
+            skinColor={character.skin_color}
+          />
+        );
+      })}
     </div>
   );
 }
