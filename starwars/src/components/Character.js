@@ -13,8 +13,8 @@ const StyledDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: black;
-    background-color: rgb(0, 0, 0, 0.10);
+    color: white;
+    background-color: rgb(0, 0, 0, 0.50);
     border-radius: 10px;
     margin-bottom: 30px;
     transition: width 0.10s, height 0.10s;
@@ -36,8 +36,8 @@ const CharacterCard = ({name, gender, height, mass, birthYear, eyeColor, hairCol
         <p>Name: {name}</p>
         <p>gender: {gender}</p>
         <p>Height: {height}</p>
-        <p>Mass: {mass}</p>
-        <p>Birth Year: {birthYear}</p>
+        <p>Weight: {mass}</p>
+        <p>Date of Birth: {birthYear}</p>
         <p>Eye Color: {eyeColor}</p>
         <p>Hair Color: {hairColor}</p>
         <p>Skin Color: {skinColor}</p>
