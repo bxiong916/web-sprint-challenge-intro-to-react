@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #f2f2f2;
+    color: black;
     background-color: rgb(0, 0, 0, 0.10);
     border-radius: 10px;
     margin-bottom: 30px;
