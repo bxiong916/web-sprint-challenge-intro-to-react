@@ -29,21 +29,17 @@ const StyledDiv = styled.div`
 `;
 
 // Character component here
-const CharacterCard = ({name, gender, height, mass, birthYear, eyeColor, hairColor, skinColor}) => {
+const CharacterCard = ({name, gender, height, mass, birthYear, eyeColor, hairColor}) => {
   return (
-    <StyledDiv>
       <div className='character-div'>
         <p>Name: {name}</p>
         <p>gender: {gender}</p>
         <p>Height: {height}</p>
         <p>Weight: {mass}</p>
-        <p>Date of Birth: {birthYear}</p>
+        <p>DOB: {birthYear}</p>
         <p>Eye Color: {eyeColor}</p>
         <p>Hair Color: {hairColor}</p>
-        <p>Skin Color: {skinColor}</p>
       </div>
-      
-    </StyledDiv>
   );
 };
 

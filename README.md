@@ -30,23 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-  React JS is a user interface component library. It solves the propblem of having to build multiple different components. You can build a component and use it over and over agian. It does by a concept called virtual DOM. When a page is rendered using React, the state of the DOM tree structure/hierarchy is stored, and when there any updates to be made to the UI, it does a diff on the previous (old) DOM tree with the new one, and updates only the ones that have changed. In this way, lots of DOM operations/refreshes are reduced, improving performance considerably.
+React is open source in JS that is used to build single page applications
 
 
 1. Describe component state.
 
-  Component State is a function, or a property that has smaller bits to it that chain or link on to itself to create dry reusable code.
+how a component behaves
 
 
 1. Describe props.
 
-  Props is data that is being passed down through the component.
+Properties are being passed or passing data from a component into another
 
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
-   Side effects are basically anything that affects something outside of the scope of the current function that's being executed.
-   Side effect allows us to pull data or change data when the component props get changed or used. Allowing for a interactive web page.
+   It affects I think that's outside of the scope and execute the function
+
 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
