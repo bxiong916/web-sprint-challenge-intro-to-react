@@ -26,8 +26,9 @@ useEffect(() => {
       // sync up with, if any.
     
       return (
+        <>
+        <h1 className="Header">Characters</h1>
         <div className="App">
-          <h1 className="Header">Characters</h1>
           {characters.map(character => {
             return (
               <CharacterCard
@@ -44,6 +45,7 @@ useEffect(() => {
             );
           })}
         </div>
+        </>
       );
     }
     export default App;

@@ -5,7 +5,6 @@ const StyledDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   .character-div {
     width: 30%;
     height: 40%;
